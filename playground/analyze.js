@@ -1,7 +1,8 @@
+const path = require('path');
 const babel = require("@babel/core");
 
 // Warm up babel - first usage is slow (probably starts a node process internally)
-babel.transformSync('console.log("a")');
+babel.transformFileSync(path.resolve(__dirname, '../es6-src/es6-module.js'));
 
 const options =  {
     sourceType: "module",
