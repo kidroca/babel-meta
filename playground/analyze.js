@@ -15,7 +15,7 @@ module.exports = function(filename) {
     const executionTime = `${seconds}.${Math.round((nano / 1000000))}ms`;
 
     return {
-        result,
+        ...result,
         executionTime,
     };
 };
