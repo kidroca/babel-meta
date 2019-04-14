@@ -4,7 +4,9 @@
   "description": "Babel playground",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "analyze-file": "node playground/analyze-es6-file.js",
+    "analyze-dir": "node playground/analyze-dir.js",
+    "test": "npm run analyze-file ./es6-src/es6-module.js"
   },
   "author": "",
   "license": "MIT",
